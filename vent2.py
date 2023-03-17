@@ -23,7 +23,23 @@ class ventana2(qtw.QWidget):
         self.texto = qtw.QLabel(chisteActual.texto)
         self.texto.setFont(qtg.QFont("Helvetica", 15))
         self.layout().addWidget(self.texto)
+        self.boton = qtw.QPushButton("Ver otro chiste",clicked = lambda: self.cambioChiste())
+        self.img = qtg.QPixmap(chisteActual.imagen)
+        self.etq = qtw.QLabel(self)
+        self.etq.setPixmap(self.img)
+        self.layout().addWidget(self.etq)
+        self.layout().addWidget(self.boton)
+        self.show()
         
+    def cambioChiste(self):
+        if self.i < 8:
+            self.i += 1
+        else:
+            self.i = 0
+        chisteActual = self.arrayChistes[self.i]
+        self.texto.setText(chisteActual.texto)
+        self.img = qtg.QPixmap(chisteActual.imagen)
+        self.etq.setPixmap(self.img)
             
             
  
