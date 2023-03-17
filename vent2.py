@@ -4,7 +4,7 @@ import PyQt5.QtWidgets as qtw
 import PyQt5.QtGui as qtg
 from chistes import Chiste
     
-
+##Aclaramos que todos los chistes fueron conseguidos en internet :)    
 
 class ventana2(qtw.QWidget):
     def __init__(self):
