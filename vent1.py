@@ -2,6 +2,7 @@
 ##Programacion aplicada, ICINF
 import PyQt5.QtWidgets as qtw
 import PyQt5.QtGui as qtg
+from vent2 import ventana2
 
 class ventana1(qtw.QWidget):
     def __init__(self):
@@ -18,7 +19,6 @@ class ventana1(qtw.QWidget):
         self.show()
             
     def cambioVentana2(self):
-        from vent2 import ventana2
         self.ventana2 = ventana2()
         self.ventana2.show()
         self.hide()
