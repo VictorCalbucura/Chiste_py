@@ -1,3 +1,5 @@
+##Victor Calbucura, Matias Salgado
+##Programacion aplicada, ICINF
 import PyQt5.QtWidgets as qtw
 import PyQt5.QtGui as qtg
 
